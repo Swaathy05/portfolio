@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Swaathy Balaji">
     <title>Swaathy Balaji | Portfolio | Android & Full Stack Developer | Swaathy's Work</title>
     <meta name="description" content="👋 Hi, I'm Swaathy Balaji - Professional Android & Full Stack Developer. Explore my portfolio featuring mobile apps, web development projects, and technical skills. Contact me for collaboration opportunities.">
     <meta name="keywords" content="Swaathy, Swaathy Balaji, Swaathy B, Swaathy Portfolio, Swaathy Developer, Swaathy Android Developer, Swaathy Full Stack Developer, Swaathy Balaji Portfolio, Swaathy Balaji Android, Swaathy Balaji Developer, Android Developer, Full Stack Developer, Mobile App Developer, Web Developer, Kotlin, Java, React, JavaScript, Portfolio, Hire Swaathy">
@@ -52,6 +56,21 @@
     <meta name="twitter:image:alt" content="Swaathy Balaji - Professional Portfolio">
     
     <!-- Structured Data -->
+    <!-- Service Worker Registration -->
+    <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js')
+          .then(function(registration) {
+            console.log('ServiceWorker registration successful');
+          }, function(err) {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+      });
+    }
+    </script>
+    
+    <!-- Structured Data / JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",

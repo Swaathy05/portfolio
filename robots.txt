@@ -1,3 +1,16 @@
+# Enhanced robots.txt for maximum visibility
 User-agent: *
 Allow: /
+Disallow: /private/
+Disallow: /admin/
+
+# Sitemaps
 Sitemap: https://swaathybalaji-portfolio.netlify.app/sitemap.xml
+
+# Crawl-delay: 10  # Uncomment if needed for server load
+
+# Additional sitemaps (add if you have them)
+# Sitemap: https://swaathybalaji-portfolio.netlify.app/blog/sitemap.xml
+
+# Host
+Host: https://swaathybalaji-portfolio.netlify.app
