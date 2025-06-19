@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swaathy Balaji | Professional Android & Full Stack Developer Portfolio</title>
-    <meta name="description" content="Professional portfolio of Swaathy Balaji, an experienced Android and Full Stack Developer. Explore my projects, skills, and get in touch for collaboration opportunities.">
-    <meta name="keywords" content="Swaathy Balaji, Swaathy B, Android Developer, Full Stack Developer, Portfolio, Mobile App Developer, Web Developer, Software Engineer">
+    <title>Swaathy Balaji | Android & Full Stack Developer | Portfolio</title>
+    <meta name="description" content="Swaathy Balaji - Professional Android & Full Stack Developer with expertise in building modern web and mobile applications. View my portfolio and projects.">
+    <meta name="keywords" content="Swaathy Balaji, Swaathy B, Android Developer, Full Stack Developer, Portfolio, Mobile App Developer, Web Developer, Software Engineer, Kotlin, Java, React, JavaScript, Web Development, App Development">
     <meta name="author" content="Swaathy Balaji">
-    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#7928CA">
+    <link rel="author" href="https://www.linkedin.com/in/swaathyb">
+    <link rel="publisher" href="https://github.com/Swaathy05">
+    <meta name="author" content="Swaathy Balaji">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://swaathybalaji-portfolio.netlify.app/" />
+    <link rel="alternate" type="application/rss+xml" title="Swaathy Balaji Portfolio RSS" href="/rss.xml">
+    <link rel="alternate" type="application/atom+xml" title="Swaathy Balaji Portfolio Atom" href="/atom.xml">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
     <meta name="google-site-verification" content="google829318cb91093e19" />
     
     <!-- Open Graph / Facebook -->
@@ -17,6 +24,11 @@
     <meta property="og:title" content="Swaathy Balaji | Android & Full Stack Developer">
     <meta property="og:description" content="Professional portfolio of Swaathy Balaji, an experienced Android and Full Stack Developer. Explore my projects and skills.">
     <meta property="og:image" content="https://swaathybalaji-portfolio.netlify.app/image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Swaathy Balaji - Android & Full Stack Developer">
+    <meta property="og:site_name" content="Swaathy Balaji Portfolio">
+    <meta property="og:locale" content="en_US">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
@@ -51,6 +63,32 @@
     </button>
     
     <style>
+        /* Skip Link */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: white;
+            padding: 8px 16px;
+            z-index: 100;
+            transition: top 0.3s;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* Logo Link */
+        .logo-link {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .logo-link[aria-current="page"] {
+            cursor: default;
+        }
+        
         /* Scroll to Top Button */
         .scroll-to-top {
             position: fixed;
@@ -791,26 +829,30 @@
     </style>
 </head>
 <body>
-    <header>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header role="banner">
         <div class="container">
             <nav>
-            <div class="logo">Swaathy Balaji</div>
+            <div class="logo" aria-label="Swaathy Balaji - Portfolio">
+                <a href="/" aria-current="page" class="logo-link">Swaathy Balaji</a>
+            </div>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#about" role="menuitem" aria-current="page">About</a></li>
+                <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
             </ul>
         </nav>
         </div>
     </header>
     
-    <section class="hero" id="about" itemscope itemtype="http://schema.org/Person">
+    <main id="main-content" tabindex="-1">
+    <section class="hero" id="about" itemscope itemtype="http://schema.org/Person" role="main">
         <div id="particles-js"></div>
         <div class="hero-bg"></div>
         <div class="container">
@@ -820,7 +862,7 @@
                         <span class="wave">👋</span>
                         <span>Hello, I'm</span>
                     </div>
-                    <h1>Hi, I'm <span class="highlight" itemprop="name">Swaathy Balaji</span></h1>
+                    <h1>Hi, I'm <span class="highlight" itemprop="name">Swaathy Balaji</span> <span class="sr-only">- Android & Full Stack Developer</span></h1>
                     <div class="typing-text">
                         <span id="typing"></span>
                         <span class="cursor">|</span>
@@ -828,17 +870,6 @@
                     <p class="hero-description">Passionate AI & Data Science student diving into creating solutions for the betterment of society. Driven to learn, grow, and make a meaningful impact through technology.</p>
                     <div class="hero-cta">
                         <a href="#projects" class="btn glow">View My Work</a>
-                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
-                    </div>
-                </div>
-                <div class="hero-illustration">
-                    <div class="profile-image-container">
-                        <img src="image.png" alt="Swaathy B - AI & Android Developer" class="profile-image">
-                        <div class="profile-overlay">
-                            <div class="social-links">
-                                <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
-                                <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
                             </div>
                         </div>
                     </div>
@@ -1251,8 +1282,9 @@
             </div>
         </div>
     </section>
+    </main>
     
-    <footer>
+    <footer role="contentinfo">
         <div class="container">
             <div class="social-links">
                 <a href="https://github.com/Swaathy05" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
