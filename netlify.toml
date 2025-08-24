@@ -2,23 +2,10 @@
   publish = "."
   command = ""
 
-[dev]
-  framework = "#static"
-  targetPort = 8000
-  port = 8888
-  publish = "."
-  autoLaunch = true
-
 [[redirects]]
   from = "/*"
-  to = "/port.html"
+  to = "/index.html"
   status = 200
 
 [build.environment]
   NODE_VERSION = "18"
-  NPM_VERSION = "9"
-
-[dev.live]
-  framework = "#custom"
-  command = "python -m http.server"
-  port = 8000
